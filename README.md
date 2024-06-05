@@ -8,7 +8,7 @@ Assumes tesseract and poplertools installed!
 ```
 $ python3
 >>>from pdf_ocr_txt.main import pdf_to_text
->>>pdf_to_text('my_output_directory','my_output_directory')
+>>>pdf_to_text('my_file.pdf','my_output_directory')
 ```
 
 See result in ```my_output_directory/my_file.pdf.txt``` .
