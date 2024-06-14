@@ -47,13 +47,14 @@ def pdf_to_text(pdf_file, out_dir):
             with open(text_path, 'r', encoding='utf-8') as infile:
                 outfile.write(infile.read())
                 outfile.write("\n")  # Add a newline between pages
-
+    return output_file
 
 def test_main():
     # Example usage
     pdf_file = '../IN/some.pdf'  # Replace with your PDF file path
     out_dir = '../OUT'  # Replace with your desired output directory
-    pdf_to_text(pdf_file, out_dir)
+    output_file=pdf_to_text(pdf_file, out_dir)
+    print("RESULTS IN:",output_file)
 
 
 if __name__ == "__main__":
